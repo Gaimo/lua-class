@@ -12,6 +12,7 @@ end
 
 function template:constructor()
     
+    return true
 end
 
 template:create()
