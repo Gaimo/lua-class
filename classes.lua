@@ -2,8 +2,8 @@ template = {}
 template.__index = template
 
 function template:create(...)
-    local instance = {}
-    setmetatable(instance, template)
+    local instance = setmetatable({}, template)
+   
     if instance:constructor(...) then
         return instance
     end
